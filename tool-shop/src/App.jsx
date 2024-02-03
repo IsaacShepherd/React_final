@@ -4,6 +4,7 @@ import All_products from "./pages/All_products";
 import Categories from "./pages/Categories";
 import All_sales from "./pages/All_sales";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/all-sales" element={<All_sales />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }

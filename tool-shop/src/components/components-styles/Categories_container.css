@@ -1,5 +1,18 @@
 .categories-container {
   border: 2px solid black;
+  padding: 1rem;
+}
+
+.categories-container h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: var(--black);
+}
+
+.categories-list {
   display: flex;
   justify-content: flex-start;
+  gap: 1rem;
 }

@@ -1,0 +1,25 @@
+.on-sale-container {
+  height: 33.25rem;
+  border: 2px solid red;
+  padding: 1rem;
+}
+
+.on-sale-container h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: var(--black);
+}
+
+.on-sale-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.product {
+  border: 1px solid var(--grey-divider);
+  border-radius: 12px;
+  width: 316px;
+  height: 422px;
+}

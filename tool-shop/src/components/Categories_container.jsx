@@ -4,9 +4,11 @@ import "./components-styles/Categories_container.css";
 export default function Categories_container() {
   return (
     <section className="categories-container">
-      <Categories_card />
-      <Categories_card />
-      <div className="categories-list"></div>
+      <h2>Categories</h2>
+      <div className="categories-list">
+        <Categories_card />
+        <Categories_card />
+      </div>
     </section>
   );
 }
