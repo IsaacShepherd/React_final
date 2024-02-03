@@ -1,0 +1,30 @@
+.hero {
+  height: 37.5rem;
+  border: 2px solid black;
+  text-align: center;
+  background-image: url("../../assets/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 110%;
+  color: var(--white);
+}
+
+.hero button {
+  border-radius: 6px;
+  padding: 16px 56px;
+  width: 218px;
+  height: 58px;
+  background: var(--green);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--white);
+}
