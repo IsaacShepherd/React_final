@@ -1,4 +1,4 @@
-import Categories_card from "./Categoreis_card";
+import Categories_card from "./Categories_card";
 import "./components-styles/Categories_container.css";
 
 export default function Categories_container() {
