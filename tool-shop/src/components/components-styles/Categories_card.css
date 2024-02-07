@@ -1,6 +1,6 @@
 .categories-card {
   height: 26.125rem;
   width: 19.75rem;
-  border: 2px solid red;
   border-radius: 12px;
+  border: 2px solid grey;
 }

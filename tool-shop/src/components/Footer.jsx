@@ -1,3 +1,5 @@
+import Instagram_icon from "../assets/Instagram_icon";
+import Whatsap_icon from "../assets/Whatsap_icon";
 import "./components-styles/Footer.css";
 
 export default function Footer() {
@@ -8,15 +10,22 @@ export default function Footer() {
         <div className="info-container">
           <div className="info-card">
             <p>Phone</p>
+            <h3>+7 (499) 350-66-04</h3>
           </div>
           <div className="info-card">
             <p>Socials</p>
+            <div className="socials-container">
+              <Instagram_icon />
+              <Whatsap_icon />
+            </div>
           </div>
           <div className="info-card">
             <p>Addres</p>
+            <h3>Dubininskaya Ulitsa, 96, Moscow, Russia, 115093</h3>
           </div>
           <div className="info-card">
             <p>Working Hours</p>
+            <h3>24 hours a day</h3>
           </div>
         </div>
         <div className="map-container">

@@ -1,0 +1,29 @@
+.discount-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  padding: 7% 1rem 1rem 1rem;
+}
+
+.discount-form button {
+  border-radius: 6px;
+  padding: 16px 32px;
+  height: 58px;
+  background: var(--white);
+}
+
+.discount-form input {
+  border: 1px solid var(--white);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--white);
+  padding: 8px 16px;
+  background-color: transparent;
+}
+
+.discount-form input::placeholder {
+  color: var(--white);
+}
