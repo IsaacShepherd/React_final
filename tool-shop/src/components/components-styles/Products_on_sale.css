@@ -1,6 +1,5 @@
 .on-sale-container {
   padding: 0px 40px 80px 40px;
-  height: 33.25rem;
 }
 
 .on-sale-container h2 {
@@ -12,13 +11,12 @@
 }
 
 .on-sale-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
 
 .product {
   border: 1px solid var(--grey-divider);
   border-radius: 12px;
-  width: 316px;
-  height: 422px;
 }

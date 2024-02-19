@@ -11,7 +11,7 @@ export default function Discount_form() {
       <input
         {...register("PhoneNumber", {
           required: true,
-          pattern: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
+          // pattern: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
         })}
         placeholder="Phone Number"
       />

@@ -1,3 +1,9 @@
+import Products_all from "../components/Products_all";
+
 export default function All_products() {
-  return <h1>All products</h1>;
+  return (
+    <>
+      <Products_all />
+    </>
+  );
 }

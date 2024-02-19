@@ -1,0 +1,59 @@
+.shoping-cart-form {
+  margin: 1rem;
+  border-radius: 12px;
+  background: var(--light-grey);
+  padding: 2rem;
+  height: min-content;
+  width: 50%;
+}
+
+.order-details p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 130%;
+  color: var(--grey);
+  padding-top: 1rem;
+}
+
+.order-details h2:first-child {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 110%;
+  color: var(--black);
+}
+
+.order-total {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 110%;
+  color: var(--black);
+}
+
+.order-details-sum {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-form-inputs {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-form-inputs input {
+  border: 1px solid var(--grey-divider);
+  border-radius: 6px;
+  padding: 1rem 2rem;
+}
+
+.order-form-inputs button {
+  margin-top: 1rem;
+  border-radius: 6px;
+  padding: 16px 32px;
+  background: var(--green);
+  color: var(--white);
+}

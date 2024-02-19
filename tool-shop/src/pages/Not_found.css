@@ -1,0 +1,42 @@
+.not-found-container {
+  margin: 10% 25%;
+}
+
+.digits-container {
+  display: flex;
+}
+
+.not-found-container h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 110%;
+  text-align: center;
+  color: var(--black);
+}
+
+.not-found-container p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 130%;
+  text-align: center;
+  color: var(--grey);
+}
+
+.text-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.text-container button {
+  border-radius: 6px;
+  padding: 16px 56px;
+  width: 209px;
+  height: 58px;
+  background: var(--green);
+  color: white;
+}

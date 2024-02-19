@@ -4,7 +4,7 @@ import "./components-styles/Categories_container.css";
 
 const endpoint = "http://localhost:3333/categories/all";
 
-export default function Categories_container() {
+export default function Categories_container_main_page() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -15,7 +15,11 @@ export default function Categories_container() {
     })();
   }, []);
 
-  const listItem = categories.map((item) => {
+  console.log(categories);
+
+  const smallCategories = categories.slice(0, 4);
+
+  const listItem = smallCategories.map((item) => {
     return (
       <Categories_card key={item.id} title={item.title} image={item.image} />
     );

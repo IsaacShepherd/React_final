@@ -23,7 +23,7 @@ export default function Navbar() {
           <Link to="all-sales">All Sales</Link>
         </li>
       </ul>
-      <Link className="cart-icon" to="#">
+      <Link className="cart-icon" to="shoping-cart">
         <CartIcon />
       </Link>
     </nav>
