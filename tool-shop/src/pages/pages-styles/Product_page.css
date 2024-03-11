@@ -1,0 +1,65 @@
+.product-page-container {
+  display: flex;
+
+  margin: 4rem 2rem;
+  gap: 2rem;
+}
+
+.product-page-container img {
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.product-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.product-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 110%;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+
+.product-price-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.product-price {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 110%;
+  color: var(--black);
+}
+
+.discounted-price {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 130%;
+  text-decoration: line-through;
+  color: var(--grey);
+  align-self: flex-end;
+}
+
+.add-to-cart {
+  border-radius: 6px;
+  padding: 1rem 4rem;
+  font-size: 1.25rem;
+  background-color: var(--green);
+  color: white;
+}
+
+.product-description h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 130%;
+  color: var(--black);
+}

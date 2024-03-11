@@ -1,29 +1,38 @@
+import { useSelector } from "react-redux";
 import Product_card from "./Product_card";
 import "./components-styles/Products_on_sale.css";
-import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-const endpoint = "http://localhost:3333/products/all";
+export default function Products_on_sale() {
+  const { list } = useSelector(({ products }) => products);
 
-export default function Products_main_page() {
-  const [products, setProducts] = useState([]);
+  let discountedList = [];
 
-  useEffect(() => {
-    (async () => {
-      const data = await fetch(endpoint).then((res) => res.json());
+  list.map((item) => {
+    if (item.discont_price) {
+      discountedList.push(item);
+    }
+  });
 
-      setProducts(data);
-    })();
-  }, []);
+  const newDiscountedList = discountedList.slice(0, 4);
 
-  const smallOnSale = products.slice(0, 4);
-
-  const listItem = smallOnSale.map((item) => {
-    return <Product_card key={item.id} title={item.title} image={item.image} />;
+  const listItems = newDiscountedList.map((item) => {
+    return (
+      <Link to={`products/${item.id}`}>
+        <Product_card
+          key={item.id}
+          title={item.title}
+          image={item.image}
+          price={item.price}
+          discont_price={item.discont_price}
+        />
+      </Link>
+    );
   });
 
   return (
     <section className="on-sale-container">
-      <div className="on-sale-list">{listItem}</div>
+      <div className="on-sale-list">{listItems}</div>
     </section>
   );
 }

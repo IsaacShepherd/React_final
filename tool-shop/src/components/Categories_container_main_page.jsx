@@ -1,34 +1,25 @@
 import Categories_card from "./Categories_card";
-import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import "./components-styles/Categories_container.css";
 
-const endpoint = "http://localhost:3333/categories/all";
-
 export default function Categories_container_main_page() {
-  const [categories, setCategories] = useState([]);
+  const { list } = useSelector(({ categories }) => categories);
 
-  useEffect(() => {
-    (async () => {
-      const data = await fetch(endpoint).then((res) => res.json());
+  const smallCategories = list.slice(0, 4);
 
-      setCategories(data);
-    })();
-  }, []);
-
-  console.log(categories);
-
-  const smallCategories = categories.slice(0, 4);
-
-  const listItem = smallCategories.map((item) => {
+  const listItems = smallCategories.map((item) => {
     return (
-      <Categories_card key={item.id} title={item.title} image={item.image} />
+      <Link to={`/categories/${item.id}`}>
+        <Categories_card key={item.id} title={item.title} image={item.image} />
+      </Link>
     );
   });
 
   return (
     <section className="categories-container">
       <h2 className="mb-2">Categories</h2>
-      <div className="categories-list">{listItem}</div>
+      <div className="categories-list">{listItems}</div>
     </section>
   );
 }

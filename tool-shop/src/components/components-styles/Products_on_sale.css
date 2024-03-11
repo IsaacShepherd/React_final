@@ -16,7 +16,25 @@
   gap: 1rem;
 }
 
+/* прописать свойство grid для одинаковой ширины */
 .product {
   border: 1px solid var(--grey-divider);
   border-radius: 12px;
+  min-width: 25%;
+}
+
+.product img {
+  height: 70%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 12px;
+}
+
+.product-info-container {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.price-container {
+  display: flex;
+  gap: 0.5rem;
 }
