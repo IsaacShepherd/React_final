@@ -12,6 +12,7 @@ import All_sales from "./pages/All_sales";
 import Not_found from "./pages/Not_found";
 import Shoping_cart_page from "./pages/Shoping_cart_page";
 import Product_page from "./pages/Product_page";
+import Single_Categorie from "./pages/Single_Categorie";
 
 import ScrollToTop from "./components/functionalComponents/ScrollToTop";
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/all-sales" element={<All_sales />} />
           <Route path="/shoping-cart" element={<Shoping_cart_page />} />
           <Route path="/products/:id" element={<Product_page />} />
+          <Route path="/categories/:id" element={<Single_Categorie />} />
           <Route path="*" element={<Not_found />} />
         </Routes>
       </div>

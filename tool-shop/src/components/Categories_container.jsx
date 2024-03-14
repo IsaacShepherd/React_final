@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Categories_card from "./Categories_card";
 import "./components-styles/Categories_container.css";
 import { useSelector } from "react-redux";
@@ -5,11 +6,11 @@ import { useSelector } from "react-redux";
 export default function Categories_container() {
   const { list } = useSelector(({ categories }) => categories);
 
-  // console.log("list", list);
-
   const listItems = list.map((item) => {
     return (
-      <Categories_card key={item.id} title={item.title} image={item.image} />
+      <Link to={`/categories/${item.id}`}>
+        <Categories_card key={item.id} title={item.title} image={item.image} />
+      </Link>
     );
   });
 

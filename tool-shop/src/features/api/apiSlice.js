@@ -4,13 +4,17 @@ import { BASE_URL } from "../../utils/constants";
 export const apiSlice = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
-  tagTypes: ["Product"],
+  tagTypes: ["Product", "Categorie"],
   endpoints: (builder) => ({
     getProduct: builder.query({
       query: ({ id }) => `/products/${id}`,
       providesTags: ["Product"],
     }),
+    getCategorie: builder.query({
+      query: ({ id }) => `/categories/${id}`,
+      providesTags: ["Categorie"],
+    }),
   }),
 });
 
-export const { useGetProductQuery } = apiSlice;
+export const { useGetProductQuery, useGetCategorieQuery } = apiSlice;
