@@ -10,7 +10,7 @@ export default function Categories_container_main_page() {
 
   const listItems = smallCategories.map((item) => {
     return (
-      <Link to={`/categories/${item.id}`}>
+      <Link to={`/categories/${item.id}`} style={{ textDecoration: "none" }}>
         <Categories_card key={item.id} title={item.title} image={item.image} />
       </Link>
     );

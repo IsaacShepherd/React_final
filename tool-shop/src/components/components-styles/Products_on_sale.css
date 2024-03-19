@@ -20,7 +20,8 @@
 .product {
   border: 1px solid var(--grey-divider);
   border-radius: 12px;
-  min-width: 25%;
+  width: 22vw;
+  height: 25rem;
 }
 
 .product img {
@@ -31,10 +32,27 @@
 }
 
 .product-info-container {
-  padding: 0 2rem 2rem 2rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 .price-container {
   display: flex;
   gap: 0.5rem;
+}
+
+.price-sm {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 110%;
+  color: var(--black);
+}
+
+.discounted-price-sm {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 130%;
+  text-decoration: line-through;
+  color: var(--grey);
 }

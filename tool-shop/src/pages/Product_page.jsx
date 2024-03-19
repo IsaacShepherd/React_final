@@ -21,6 +21,14 @@ const Product_page = () => {
   if (count <= 0) {
     setCount(1);
   }
+
+  let actualPrice = product.price;
+  let discountPrice = product.discont_price;
+
+  if (discountPrice) {
+    actualPrice = discountPrice;
+  }
+
   return !data ? (
     <section className="preloader">Loading...</section>
   ) : (
@@ -29,9 +37,9 @@ const Product_page = () => {
       <div className="product-item-container">
         <p className="product-name">{product.title}</p>
         <div className="product-price-container">
-          <p className="product-price">{formatCurrency(product.price)}</p>
+          <p className="product-price">{formatCurrency(actualPrice)}</p>
           <p className="discounted-price">
-            {formatCurrency(product.discont_price)}
+            {product.discont_price && formatCurrency(product.price)}
           </p>
           <button className="add-to-cart">Add to cart</button>
         </div>

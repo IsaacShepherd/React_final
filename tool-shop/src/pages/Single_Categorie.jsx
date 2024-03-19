@@ -17,7 +17,7 @@ const Single_Categorie = () => {
   if (!isLoading) {
     listItems = data.data.map((item) => {
       return (
-        <Link to={`/products/${item.id}`}>
+        <Link to={`/products/${item.id}`} style={{ textDecoration: "none" }}>
           <Product_card
             key={item.id}
             title={item.title}
@@ -34,7 +34,7 @@ const Single_Categorie = () => {
     <section className="preloader">Loading...</section>
   ) : (
     <>
-      <h2 className="mb-2">{data.category.title}</h2>
+      <h2 className="mb-2 categories-header">{data.category.title}</h2>
       <div className="on-sale-list">{listItems}</div>
     </>
   );

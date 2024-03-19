@@ -16,7 +16,7 @@ export default function Products_on_sale() {
 
   const listItems = discountedList.map((item) => {
     return (
-      <Link to={`/products/${item.id}`}>
+      <Link to={`/products/${item.id}`} style={{ textDecoration: "none" }}>
         <Product_card
           key={item.id}
           title={item.title}

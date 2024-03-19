@@ -95,6 +95,16 @@ h1 {
   line-height: 110%;
   color: var(--black);
 }
+
+.categories-header {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: var(--black);
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
 /* Utility classes */
 .mb-2 {
   margin-bottom: 2rem;
